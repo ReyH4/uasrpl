@@ -1,0 +1,350 @@
+/* VARIABLES */
+
+
+:root {
+    --c-dark: #212529;
+    --c-brand: #75e2c5;
+    --c-band-light: #dd69c8;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --transition: all 0.5s ease;
+}
+
+body{
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1 .h2 .h3 .h4 .h5 .h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+a{
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--c-band-light);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.theme-shadow{
+    box-shadow: var(--box-shadow);
+}
+
+/* IMAGE ZOOM */
+
+.image-zoom{
+    position: relative;
+    overflow: hidden;
+}
+
+.image-zoom-wrapper{
+    overflow: hidden;
+    position: relative;
+    height: auto;
+}
+
+.image-zoom-wrapper img{
+    transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img{
+    transform: scale(1.1);
+}
+/* NAVBAR */
+
+.navbar{
+    box-shadow: var(--box-shadow);
+}
+
+ .navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+ }
+
+ .navbar-nav .nav-link:active{
+    color: var(--c-brand);
+ }
+
+
+ /* button */
+
+ .btn{
+    position: relative;
+    /* display: inline-block; */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--c-brand);
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid var(--c-brand);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 var(--c-brand);
+ }
+
+.btn-brand{
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    color: white;
+    box-shadow: inset 0 -100px 0 0 var(--c-brand);
+}
+
+
+.button {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--c-brand);
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid var(--c-brand);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 var(--c-brand);
+  }
+  
+  .button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 var(--c-brand);
+  }
+
+/* HERO SECTION  */
+
+#hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.448), rgba(0, 0, 0, 0.554)), url(../images/123.png);
+    background-position: center;
+    background-size: cover;
+} 
+
+/* SECTION TITLE */
+
+.section-title{
+    margin-bottom: 30px;
+}
+
+.section-title .line{
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ICONBOX */
+
+.iconbox{
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand), 0.1);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
+}
+
+/* COUNTER */
+
+#counter{
+    background: linear-gradient(rgba(var(--c-brand-rgb),0.8), rgba(var(--c-brand-rgb),0.8)), url(../images/regis-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* FEATURED GAMES */
+
+.cards {
+ background: #f5f5f5;
+ position: relative;
+ transition: 0.5s ease-out;
+ overflow: visible;
+ border: 5px solid var(--c-brand);
+}
+
+.cards img {
+    z-index: -2;
+}
+
+.cards-details {
+ color: white;
+ height: 50%;
+ display: grid;
+ place-content: center;
+}
+
+.cards-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: var(--c-brand);
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem; 
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+.cards:hover .cards-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+
+
+
+/* overlay */
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    padding-top: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+	}
+
+/* BLOG POST */
+.blog-post-content{
+    
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.blog-post img{
+    opacity: 1;
+}
+
+/* FOOTER */
+
+footer{
+    padding-top: 100px;
+}
+
+.footer-top{
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.footer-bottom{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer li,
+footer p,
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer .line{
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+}
+.social-icons a:hover{
+    background-color: var(--c-brand);
+    color: white;
+}
+
+
+
+/* LOG IN AND SIGN UP PAGE */
+
+.login-form{
+    border-radius: 25px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+}
+
+.signup-card{
+margin-top: 100px;
+margin-bottom: 150px;
+}
+
+/* EVENT PAGE */
+.event-hero{
+    height: 65vh;
+}
+#hero-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/jjk.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.reg-card{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.9px);
+-webkit-backdrop-filter: blur(4.9px);
+border: 1px solid rgba(255, 255, 255, 0.99);
+}
